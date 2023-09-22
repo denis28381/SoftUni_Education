@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Hello SoftUni", "First 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Nums 1_10", "02. Nums 1_10\02. Nums 1_10.csproj", "{54B936E0-3D81-4D82-BA7B-CFD3B8545687}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Rectangle Area", "03. Rectangle Area\03. Rectangle Area.csproj", "{E76DBEC3-D7DE-4C83-8EEB-DFD50EF2D2AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{54B936E0-3D81-4D82-BA7B-CFD3B8545687}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54B936E0-3D81-4D82-BA7B-CFD3B8545687}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54B936E0-3D81-4D82-BA7B-CFD3B8545687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76DBEC3-D7DE-4C83-8EEB-DFD50EF2D2AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76DBEC3-D7DE-4C83-8EEB-DFD50EF2D2AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76DBEC3-D7DE-4C83-8EEB-DFD50EF2D2AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76DBEC3-D7DE-4C83-8EEB-DFD50EF2D2AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
