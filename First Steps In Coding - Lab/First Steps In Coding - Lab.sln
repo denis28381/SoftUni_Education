@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Hello SoftUni", "First Steps In Coding - Lab\01. Hello SoftUni.csproj", "{0186CC46-73DC-4616-A41D-560D6D46D281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Nums 1_10", "02. Nums 1_10\02. Nums 1_10.csproj", "{54B936E0-3D81-4D82-BA7B-CFD3B8545687}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0186CC46-73DC-4616-A41D-560D6D46D281}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0186CC46-73DC-4616-A41D-560D6D46D281}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0186CC46-73DC-4616-A41D-560D6D46D281}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0186CC46-73DC-4616-A41D-560D6D46D281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B936E0-3D81-4D82-BA7B-CFD3B8545687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B936E0-3D81-4D82-BA7B-CFD3B8545687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B936E0-3D81-4D82-BA7B-CFD3B8545687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B936E0-3D81-4D82-BA7B-CFD3B8545687}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81AC91F5-D9A3-4036-83FF-71286A053D51}
+	EndGlobalSection
+EndGlobal
