@@ -1,5 +1,4 @@
-﻿using System;
-namespace First_Steps_In_Coding___Lab
+﻿namespace _01._Hello_SoftUni
 {
     class Program
     {
