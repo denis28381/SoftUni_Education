@@ -1,5 +1,4 @@
-﻿using System;
-namespace _01._Integer_Operations
+﻿namespace _05._Print_Part_Of_ASCII_Table
 {
     internal class Program
     {
