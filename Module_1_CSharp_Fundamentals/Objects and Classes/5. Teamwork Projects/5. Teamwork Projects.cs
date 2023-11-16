@@ -7,6 +7,7 @@
         {
             Name = teamName;
             Creator = creatorName;
+            Members = new List<string>();
         }
 
         public string Name { get; set; }
@@ -88,9 +89,42 @@
 
                 if (hasAnyTesmWithSameName == false)
                 {
-                    Console.WriteLine($"Team {team.Name}");
+                    Console.WriteLine($"Team {teamName} does not exist!");
+                    continue;
                 }
+
+                if (teams.Any(team => team.Creator == joinerName) ||
+                    teams.Any(team => team.Members.Contains(joinerName)))
+                {
+                    Console.WriteLine($"Member {joinerName} cannot join team {teamName}!");
+                    continue;
+                }
+
+                /*
+                Team t = teams.FirstOrDefault(t => t.Name == teamName);
+                if (t != null)
+                {
+                    t.Members.Add(joinerName);
+                }*/
+
+                teams.First(t => t.Name == teamName).Members.Add(joinerName);
             }
+
+            List<Team> leftTeams = teams.Where(t => t.Members.Count > 0).ToList();
+           
+
+            List<Team> orderedTeams = leftTeams
+                .OrderByDescending(t => t.Members.Count)
+                .ThenBy(t => t.Name)
+                .ToList();
+
+            orderedTeams.ForEach(team => Console.WriteLine(team)); 
+            
+            List<Team> disbandTeams = teams.Where(t => t.Members.Count <= 0).ToList();
+            Console.WriteLine("Teams to disband:");
+            disbandTeams = disbandTeams.OrderBy(t => t.Name).ToList();
+
+            disbandTeams.ForEach(team => Console.WriteLine(team));
         }
     }
 }
