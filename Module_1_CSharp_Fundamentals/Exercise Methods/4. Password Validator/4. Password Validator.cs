@@ -9,7 +9,7 @@ namespace _4._Password_Validator
             string pass = Console.ReadLine();
             
 
-            if (checkLength(pass) == true && checkLettersDigits(pass) == true && checkTwoDigits(pass) == true)
+            if (checkLength(pass) == true & checkLettersDigits(pass) == true & checkTwoDigits(pass) == true)
             {
                 Console.WriteLine("Password is valid");
             }
@@ -18,7 +18,7 @@ namespace _4._Password_Validator
 
         static bool checkLength(string password)
         {
-            if (password.Length <= 6 && password.Length >= 10)
+            if (password.Length < 6 || 10 < password.Length)
             {
                 Console.WriteLine("Password must be between 6 and 10 characters ");
                 return false;
