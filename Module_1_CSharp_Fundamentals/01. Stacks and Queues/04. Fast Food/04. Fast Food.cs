@@ -20,8 +20,6 @@
 
             while (ordersQueue.Any())
             {
-                Console.WriteLine(ordersQueue.Max());
-
                 if (foodQuantity >= ordersQueue.Peek())
                 {
                     foodQuantity -= ordersQueue.Dequeue();
