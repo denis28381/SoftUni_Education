@@ -4,8 +4,14 @@
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int m = int.Parse(Console.ReadLine());
+
+            int[] lenght = Console.ReadLine()
+                .Split(' ')
+                .Select(int.Parse)
+                .ToArray();
+
+            int n = lenght[0];
+            int m = lenght[1];
 
             HashSet<int> uniqueN = new();
 
@@ -14,15 +20,27 @@
                 uniqueN.Add(int.Parse(Console.ReadLine()));
             }
 
+            HashSet<int> uniqueM = new();
+
             for (int j = 0; j < m; j++)
             {
-                uniqueN.Add(int.Parse(Console.ReadLine()));
+                uniqueM.Add(int.Parse(Console.ReadLine()));
             }
+
+            HashSet<int> checkedSet = new();
 
 
             foreach (int num in uniqueN)
             {
-                Console.WriteLine(num);
+                if (uniqueM.Contains(num))
+                {
+                    checkedSet.Add(num);
+                }
+            }
+
+            foreach (int checkedNum in checkedSet)
+            {
+                Console.Write($"{checkedNum} ");
             }
         }
     }

@@ -5,6 +5,7 @@ namespace _06._Repainting
     {
         static void Main(string[] args)
         {
+            // Console Input
             int naiKol = int.Parse(Console.ReadLine());
             int boqKol = int.Parse(Console.ReadLine());
             int RazKol = int.Parse(Console.ReadLine());
@@ -20,6 +21,7 @@ namespace _06._Repainting
             double naiPr = (naiKol + b) * nailon;
             double boqPr = (boqKol + a) * boq;
             double razpr = RazKol * razreditel;
+
             double totalMat = naiPr + boqPr + razpr + bag;
             double maistor = (totalMat * 0.30) * time;
             double all = totalMat + maistor;
